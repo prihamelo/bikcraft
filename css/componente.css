@@ -1,0 +1,19 @@
+.botão {
+  background: linear-gradient(#ffc700, #ea8c00);
+  color: var(--amarelo1);
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+}
+.botão:hover {
+  background: linear-gradient(#f3be00, #d68000);
+}
+@media (max-width: 800px) {
+  .botão {
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

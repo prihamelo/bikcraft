@@ -1,0 +1,38 @@
+.amarelo {
+  color: #ffc700;
+}
+.amarelo1 {
+  color: #4e3d00;
+}
+.branco {
+  color: #ffffff;
+}
+.preto {
+  color: #000000;
+}
+.preto1 {
+  color: #101010;
+}
+.preto2 {
+  color: #1d1d1d;
+}
+.cinza {
+  color: #e5e5e5;
+}
+.cinza1 {
+  color: #b4b1b1;
+}
+.cinza2 {
+  color: #484848;
+}
+.cinza3 {
+  color: #313131;
+}
+:root {
+  --branco: #ffffff;
+  --preto: #000000;
+  --preto1: #101010;
+  --preto2: #1d1d1d;
+  --amarelo: #ffc700;
+  --amarelo1: #4e3d00;
+}

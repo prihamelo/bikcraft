@@ -5,13 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft">
   <title>Bikcraft</title>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 <body>
   <header class="header-bg">
-    <div class="header">
+    <div class="header container">
       <a href="./"> <img src="/img/bikcraft.svg" alt="Bikcraft"> </a>
       <nav aria-label="primaria">
         <ul class="header-menu">
@@ -22,51 +28,68 @@
       </nav>
     </div>
   </header>
-  <section class="introdução">
-    <div>
-      <h1>bicicletas feitas sob medida</h1>
-      <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-      <a href="/">SELECIONE A SUA</a>
+  <main class="introdução">
+    <div class="conteudointro container branco">
+      <div class="textosintro">
+        <h1 class="p-titulo introtitulo">Bicicletas feitas sob medida<span class="amarelo">.</span></h1>
+        <p class="r-texto cinza introtexto">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botão" href="/">SELECIONE A SUA</a>
+      </div>
+      <img class="imgintro" src="/img/fotos/introducao.jpg" alt="bicicleta">
     </div>
-    <img src="/img/fotos/introducao.jpg" alt="bicicleta">
-  </section>
-  <section class="opções">
-    <h1>escolha a sua</h1>
-    <div class="bicicleta">
-      <img src="/img/bicicletas/magic-home.jpg" alt="magic might">
-      <h4>Magic Might</h4>
-      <p>2499</p>
+  </main>
+  <article class="opções">
+    <h1 class="container p-titulo">escolha a sua <span class="amarelo">.</span></h1>
+    <div class="bicicletas">
+      <div class="bicicleta">
+        <a href="./bicicletas/magic.html">
+          <img src="/img/bicicletas/magic-home.jpg" alt="magic might">
+          <h2 class="p-titulo1 preto1">Magic Might</h2>
+          <p class="preço r-texto1 cinza3">R$2499</p>
+        </a>
+      </div>
+      <div class="bicicleta">
+        <a href="./bicicletas/nimbus.html">
+          <img src="/img/bicicletas/nimbus-home.jpg" alt="nimbus stark">
+          <h2 class="p-titulo1 preto1">Nimbus Stark</h2>
+          <p class="preço r-texto1 cinza3">R$4999</p>
+        </a>
+      </div>
+      <div class="bicicleta">
+        <a href="./bicicletas/nebula.html">
+          <img src="/img/bicicletas/nebula-home.jpg" alt="magic might">
+          <h2 class="p-titulo1 preto1">Nebula Cosmic</h2>
+          padding-right: 20px;
+          <p class="preço r-texto1 cinza3">R$3499</p>
+        </a>
+      </div>
     </div>
-    <div class="bicicleta">
-      <img src="/img/bicicletas/nimbus-home.jpg" alt="nimbus stark">
-      <h4>Ninbus Stark</h4>
-      <p>4999</p>
-    </div>
-    <div class="bicicleta">
-      <img src="/img/bicicletas/nebula-home.jpg" alt="magic might">
-      <h4>Nebula Cosmic</h4>
-      <p>3499</p>
-    </div>
-  </section>
-  <section class="tecnologia">
-    <div>
-      <h5>TECNOLOGIA AVANÇADA</h5>
-      <h1>Você escolha as suas cores e componetes</h1>
-      <p>Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
-      <a href="/"> ESCOLHA A SUA</a>
+  </article>
+  <article class="tecnologia-bg">
+    <div class="tecnologia container branco">
       <div>
-        <img src="img/moto.svg" alt="moto">
-        <h6>Motor elétrico</h6>
-        <p>Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+        <h4 class="r-sub cinza">TECNOLOGIA AVANÇADA</h4>
+        <h1 class="p-titulo">Você escolha as suas cores e componetes <span class="amarelo">.</span></h1>
+        <p class="r-paragrafo1 cinza">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
+        <a class="p-titulo2 amarelo link" href="/"> ESCOLHA A SUA</a>
+        <div class="vantagens">
+          <div>
+            <img src="img/moto.svg" alt="moto">
+            <h6 class="p-titulo2">Motor elétrico</h6>
+            <p class="r-texto cinza">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+          </div>
+          <div>
+            <img src="/img/ratreador.svg" alt="ratreador">
+            <h6 class="p-titulo2">Rastreador</h6>
+            <p class="r-texto cinza">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
+          </div>
+        </div>
       </div>
       <div>
-        <img src="/img/ratreador.svg" alt="ratreador">
-        <h6>Rastreador</h6>
-        <p>Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
+        <img class="imgtec" src="/img/fotos/tecnologia.jpg" alt="tecnologia">
       </div>
-      <img src="/img/fotos/tecnologia.jpg" alt="tecnologia">
     </div>
-  </section>
+  </article>
   <section class="parceiros">
     <h1>nossos parceiros</h1>
     <div class="parceiro">

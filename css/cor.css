@@ -4,6 +4,7 @@
 .amarelo1 {
   color: #4e3d00;
 }
+
 .branco {
   color: #ffffff;
 }
@@ -28,6 +29,9 @@
 .cinza3 {
   color: #313131;
 }
+.cinza4 {
+  color: #9c9c9c;
+}
 :root {
   --branco: #ffffff;
   --preto: #000000;
@@ -35,4 +39,11 @@
   --preto2: #1d1d1d;
   --amarelo: #ffc700;
   --amarelo1: #4e3d00;
+  --amarelo2: #ca9e00;
+  --branco1: #eeeeee;
+  --cinza: #e5e5e5;
+  --cinza1: #b4b1b1;
+  --cinza2: #484848;
+  --cinza3: #313131;
+  --cinza4: #9c9c9c;
 }

@@ -11,9 +11,6 @@
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft">
   <title>Bikcraft</title>
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 <body>
   <header class="header-bg">
@@ -59,7 +56,6 @@
         <a href="./bicicletas/nebula.html">
           <img src="/img/bicicletas/nebula-home.jpg" alt="magic might">
           <h2 class="p-titulo1 preto1">Nebula Cosmic</h2>
-          padding-right: 20px;
           <p class="preço r-texto1 cinza3">R$3499</p>
         </a>
       </div>
@@ -90,78 +86,90 @@
       </div>
     </div>
   </article>
-  <section class="parceiros">
-    <h1>nossos parceiros</h1>
-    <div class="parceiro">
-      <img src="/img/parceiros/caravan.svg" alt="">
-      <img src="/img/parceiros/dogs.svg" alt="">
-      <img src="/img/parceiros/flexblog.svg" alt="">
-      <img src="/img/parceiros/handel.svg" alt="">
-      <img src="/img/parceiros/lescone.svg" alt="">
-      <img src="/img/parceiros/ranek.svg" alt="">
-      <img src="/img/parceiros/surfbot.svg" alt="">
-      <img src="/img/parceiros/wildbeast.svg" alt="">
-    </div>
+  <section class="parceiros" aria-label="nossos parceiros">
+    <h1 class="p-titulo container">nossos parceiros <span class="amarelo">.</span></h1>
+    <ul class="parceiro">
+      <li><img src="/img/parceiros/caravan.svg" alt=""></li>
+      <li><img src="/img/parceiros/dogs.svg" alt=""></li>
+      <li> <img src="/img/parceiros/flexblog.svg" alt=""></li>
+      <li> <img src="/img/parceiros/handel.svg" alt=""></li>
+      <li><img src="/img/parceiros/lescone.svg" alt=""></li>
+      <li><img src="/img/parceiros/ranek.svg" alt=""></li>
+      <li><img src="/img/parceiros/surfbot.svg" alt=""></li>
+      <li> <img src="/img/parceiros/wildbeast.svg" alt=""></li>
+    </ul>
   </section>
   <section class="depoimento">
-    <img src="/img/fotos/depoimento.jpg" alt="bicicleta">
     <div>
-      <p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.</p>
-      <p>Ana Júlia</p>
+      <img src="/img/fotos/depoimento.jpg" alt="bicicleta">
+    </div>
+    <div class="conteudodep">
+      <p class="dep textodep amarelo1">Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.</p>
+      <span class="p-titulo2  amarelo1">Ana Júlia</span>
     </div>
   </section>
-  <section class="seguros">
-    <h1>Seguros</h1>
-    <div class="prata">
-      <h3>PRATA</h3>
-      <div>
-        <h3>R$199</h3>
-        <p>mensal</p>
+  <article class="seguros-bg branco">
+    <div class="seguros container">
+      <h1 class="p-titulo">seguros<span class="amarelo">.</span></h1>
+      <div class="peo prata">
+        <h3 class="p-titulo1 cinza4">PRATA</h3>
+        <span class="p-titulo1">R$199
+          <span class="p-textop cinza4">mensal</span></span>
+        <ul class="r-texto1">
+          <li>Duas trocas por ano</li>
+          <li>Assistência técnica</li>
+          <li>Suporte (08h às 18h)</li>
+          <li>Cobertura Estadual</li>
+        </ul>
+        <a class="botão secundario" href="./orçamento.hmtl">INSCREVA-SE<a>
       </div>
-      <ul>
-        <li>Duas trocas por ano</li>
-        <li>Assistência técnica</li>
-        <li>Suporte (08h às 18h)</li>
-        <li>Cobertura Estadual</li>
-      </ul>
-      <a href="/">INSCREVA-SE<a>
-    </div>
-    <div class="ouro">
-      <h3>OURO</h3>
-      <div>
-        <h3>R$299</h3>
-        <p>mensal</p>
+      <div class="peo ouro">
+        <div>
+          <h3 class="amarelo p-titulo1">OURO</h3>
+        </div>
+        <span class="p-titulo1">R$299
+          <span class="p-textop cinza4">mensal</span>
+        </span>
+        <ul class="r-texto1">
+          <li>Cinco trocas por ano</li>
+          <li>Assistência especial</li>
+          <li>Suporte 24h</li>
+          <li>Cobertura nacional</li>
+          <li>Desconto de parceiro</li>
+          <li>Acesso ao clube Bikcraft</li>
+        </ul>
+        <a class="botão" href="./orçamento.hmtl">INSCREVA-SE<a>
       </div>
-      <ul>
-        <li>Cinco trocas por ano</li>
-        <li>Assistência especial</li>
-        <li>Suporte 24h</li>
-        <li>Cobertura nacional</li>
-        <li>Desconto de parceiro</li>
-        <li>Acesso ao clube Bikcraft</li>
-      </ul>
-      <a href="/">INSCREVA-SE<a>
     </div>
-  </section>
-  <footer>
-    <img src="/img/bikcraft.svg" alt="Bikcraft">
-    <div>
-      <h6>CONTATO</h6>
-      <P>+55 (11) 99999-9999</P>
-      <p>contato@bikcraft.com</p>
-      <p>Rua Fulano de Tal, 11<br>Bairro, cidade - UF</p>
-      <img src="/img/insta.svg" alt="">
-      <img src="/img/face.svg" alt="">
-      <img src="/img/yout.svg" alt="">
+  </article>
+  <footer class="footer-bg">
+    <div class="footer container branco">
+      <img class="bikcraft-logo" src="/img/bikcraft.svg" alt="Bikcraft">
+      <div class="contato">
+        <h3 class="r-titulopp">CONTATO</h3>
+        <Ul class="p-textop cinza4">
+          <li><a href="tel:+5511999999999">+55 (11) 99999-9999</a></li>
+          <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+          <li><span>Rua Fulano de Tal, 11</span></li>
+          <li><span>São Paulo - SP<span></li>
+        </Ul>
+        <div class="footer-redes">
+          <img src="/img/insta.svg" alt="">
+          <img src="/img/face.svg" alt="">
+          <img src="/img/yout.svg" alt="">
+        </div>
+      </div>
+      <div class="informção">
+        <h3 class="r-titulopp">INFORMAÇÕES</h3>
+        <Ul class="p-textop cinza4">
+          <li><a href="/">Bicicletas</a></li>
+          <li><a href="/">Seguros</a></li>
+          <li><a href="/">Contato</a></li>
+          <li><a href="/">Termos e condições</a></li>
+        </ul>
+      </div>
+      <p class="textfooter r-texto1 cinza4">Bikcraft© Alguns direitos reservados.</p>
     </div>
-    <div>
-      <h6>INFORMAÇÕES</h6>
-      <a href="/">Bicicletas</a>
-      <a href="/">Seguros</a>
-      <a href="/">Contato</a>
-      <a href="/">Termos e condições</a>
-    </div>
-    <p>Bikcraft. Alguns direitos reservados.</p>
   </footer>
 </body>
 

@@ -20,7 +20,6 @@
 .imgintro {
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }
 @media (max-width: 1200px) {
   .textosintro {

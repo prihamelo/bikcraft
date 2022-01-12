@@ -1,4 +1,5 @@
 .botão {
+  display: inline-block;
   background: linear-gradient(#ffc700, #ea8c00);
   color: var(--amarelo1);
   padding: 16px 24px;
@@ -6,9 +7,17 @@
   font-family: Poppins;
   font-weight: 600;
   font-size: 18px;
+  max-width: max-content;
+}
+.botão.secundario {
+  background: var(--cinza3);
+  color: var(--branco1);
 }
 .botão:hover {
   background: linear-gradient(#f3be00, #d68000);
+}
+.botão.secundario:hover {
+  background: var(--cinza2);
 }
 @media (max-width: 800px) {
   .botão {

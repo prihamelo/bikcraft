@@ -1,0 +1,19 @@
+.titulo-bg {
+  background: var(--preto1);
+}
+.termos-titulo {
+  padding: 60px 0px;
+}
+.termos-titulo h1 {
+  margin-top: 12px;
+}
+.cont-termos {
+  padding-bottom: 120px;
+  padding-top: 60px;
+}
+.cont-termos h2 {
+  margin-bottom: 28px;
+}
+.item {
+  padding-top: 60px;
+}

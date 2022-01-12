@@ -10,3 +10,5 @@
 @import url("./css/depoimento.css");
 @import url("./css/seguro.css");
 @import url("./css/footer.css");
+/* Termos e condições */
+@import url("./css/termos/termos.css");

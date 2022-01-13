@@ -1,0 +1,79 @@
+.bike {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.img-bike span {
+  background: var(--preto);
+  padding: 8px 16px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  border-radius: 4px 0px 0px 4px;
+}
+.img-bike {
+  position: relative;
+}
+.conteudo-bikes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+.conteudo-bikes h2,
+.conteudo-bikes p {
+  grid-column: 1/-1;
+}
+.bikes h2 {
+  margin-bottom: 20px;
+}
+.bikes h2::before {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 8px;
+  background: var(--amarelo);
+  margin-bottom: 8px;
+}
+.bikes p {
+  margin-bottom: 32px;
+}
+.bikes a {
+  place-self: end;
+}
+.bikes li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bikes li + li {
+  margin-top: 16px;
+}
+.bike-bg {
+  background: linear-gradient(to right, #ffffff 30%, var(--preto1) 30%);
+}
+@media (max-width: 800px) {
+  .bike-bg {
+    background: var(--preto1);
+  }
+  .bike {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .conteudo-bikes {
+    grid-template-columns: 1fr;
+  }
+  .bikes a {
+    place-self: start;
+  }
+  .bikes ul {
+    margin-bottom: 32px;
+  }
+}

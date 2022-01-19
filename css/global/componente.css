@@ -8,6 +8,8 @@
   font-weight: 600;
   font-size: 18px;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 .botão.secundario {
   background: var(--cinza3);
@@ -32,7 +34,8 @@
   background: var(--cinza2);
 }
 .titulo-bg {
-  background: var(--preto1);
+  background: var(--preto1) url("/img/dec/top-right.svg") no-repeat top 60px
+    right 60px;
   padding-top: 60px;
   padding-bottom: 60px;
 }

@@ -15,7 +15,7 @@
 <body>
   <header class="header-bg">
     <div class="header container">
-      <a href="./"> <img src="/img/bikcraft.svg" alt="Bikcraft"> </a>
+      <a href="./"> <img src="/img/bikcraft.svg" width="136" height="32" alt="Bikcraft"> </a>
       <nav aria-label="primaria">
         <ul class="header-menu p-textopp">
           <li> <a href="/bicicletas.html"> Bicicletas </a> </li>
@@ -32,7 +32,10 @@
         <p class="r-texto cinza introtexto">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
         <a class="botão" href="/">SELECIONE A SUA</a>
       </div>
-      <img class="imgintro" src="/img/fotos/introducao.jpg" alt="bicicleta">
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+        <img class="imgintro" src="/img/fotos/introducao.jpg" width="1280" height="1600" alt="bicicleta">
+      </picture>
     </div>
   </main>
   <article class="opções">
@@ -40,21 +43,21 @@
     <div class="bicicletas">
       <div class="bicicleta">
         <a href="./bicicletas/magic.html">
-          <img src="/img/bicicletas/magic-home.jpg" alt="magic might">
+          <img src="/img/bicicletas/magic-home.jpg" width="920" height="1040" alt="magic might">
           <h2 class="p-titulo1 preto1">Magic Might</h2>
           <p class="preço r-texto1 cinza3">R$2499</p>
         </a>
       </div>
       <div class="bicicleta">
         <a href="./bicicletas/nimbus.html">
-          <img src="/img/bicicletas/nimbus-home.jpg" alt="nimbus stark">
+          <img src="/img/bicicletas/nimbus-home.jpg" width="920" height="1040" alt="nimbus stark">
           <h2 class="p-titulo1 preto1">Nimbus Stark</h2>
           <p class="preço r-texto1 cinza3">R$4999</p>
         </a>
       </div>
       <div class="bicicleta">
         <a href="./bicicletas/nebula.html">
-          <img src="/img/bicicletas/nebula-home.jpg" alt="magic might">
+          <img src="/img/bicicletas/nebula-home.jpg" width="920" height="1040  alt=" magic might">
           <h2 class="p-titulo1 preto1">Nebula Cosmic</h2>
           <p class="preço r-texto1 cinza3">R$3499</p>
         </a>
@@ -70,38 +73,38 @@
         <a class="p-titulo2 amarelo link" href="/"> ESCOLHA A SUA</a>
         <div class="vantagens">
           <div>
-            <img src="img/moto.svg" alt="moto">
+            <img src="img/moto.svg" width="24" height="24" alt="moto">
             <h6 class="p-titulo2">Motor elétrico</h6>
             <p class="r-texto cinza">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </div>
           <div>
-            <img src="/img/ratreador.svg" alt="ratreador">
+            <img src="/img/ratreador.svg" width="24" height="24" alt="ratreador">
             <h6 class="p-titulo2">Rastreador</h6>
             <p class="r-texto cinza">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
           </div>
         </div>
       </div>
       <div>
-        <img class="imgtec" src="/img/fotos/tecnologia.jpg" alt="tecnologia">
+        <img class="imgtec" src="/img/fotos/tecnologia.jpg" width="1200" height="1920" alt="tecnologia">
       </div>
     </div>
   </article>
   <section class="parceiros" aria-label="nossos parceiros">
     <h1 class="p-titulo container">nossos parceiros <span class="amarelo">.</span></h1>
     <ul class="parceiro">
-      <li><img src="/img/parceiros/caravan.svg" alt=""></li>
-      <li><img src="/img/parceiros/dogs.svg" alt=""></li>
-      <li> <img src="/img/parceiros/flexblog.svg" alt=""></li>
-      <li> <img src="/img/parceiros/handel.svg" alt=""></li>
-      <li><img src="/img/parceiros/lescone.svg" alt=""></li>
-      <li><img src="/img/parceiros/ranek.svg" alt=""></li>
-      <li><img src="/img/parceiros/surfbot.svg" alt=""></li>
-      <li> <img src="/img/parceiros/wildbeast.svg" alt=""></li>
+      <li><img src="/img/parceiros/caravan.svg" width="140" height="38" alt=""></li>
+      <li><img src="/img/parceiros/dogs.svg" width="152" height="39" alt=""></li>
+      <li> <img src="/img/parceiros/flexblog.svg" width="165" height="38" alt=""></li>
+      <li> <img src="/img/parceiros/handel.svg" width="139" height="50" alt=""></li>
+      <li><img src="/img/parceiros/lescone.svg" width="208" height="41" alt=""></li>
+      <li><img src="/img/parceiros/ranek.svg" width="149" height="36" alt=""></li>
+      <li><img src="/img/parceiros/surfbot.svg" width="200" height="49" alt=""></li>
+      <li> <img src="/img/parceiros/wildbeast.svg" width="139" height="34" alt=""></li>
     </ul>
   </section>
   <section class="depoimento">
     <div>
-      <img src="/img/fotos/depoimento.jpg" alt="bicicleta">
+      <img src="/img/fotos/depoimento.jpg" width="1560" height="1360" alt="bicicleta">
     </div>
     <div class="conteudodep">
       <p class="dep textodep amarelo1">Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.</p>
@@ -121,15 +124,13 @@
           <li>Suporte (08h às 18h)</li>
           <li>Cobertura Estadual</li>
         </ul>
-        <a class="botão secundario" href="./orçamento.hmtl">INSCREVA-SE<a>
+        <a class="botão secundario" href="/orçamento.hmtl">INSCREVA-SE<a>
       </div>
       <div class="peo ouro">
-        <div>
-          <h3 class="amarelo p-titulo1">OURO</h3>
-        </div>
-        <span class="p-titulo1">R$299
-          <span class="p-textop cinza4">mensal</span>
-        </span>
+        <h3 class="amarelo p-titulo1">OURO</h3>
+        <div class="spanp"><span class="p-titulo1">R$299
+            <span class="p-textop cinza4">mensal</span>
+          </span></div>
         <ul class="r-texto1">
           <li>Cinco trocas por ano</li>
           <li>Assistência especial</li>
@@ -138,13 +139,13 @@
           <li>Desconto de parceiro</li>
           <li>Acesso ao clube Bikcraft</li>
         </ul>
-        <a class="botão" href="./orçamento.hmtl">INSCREVA-SE<a>
+        <a class="botão" href="/orçamento.hmtl">INSCREVA-SE<a>
       </div>
     </div>
   </article>
   <footer class="footer-bg">
     <div class="footer container branco">
-      <img class="bikcraft-logo" src="/img/bikcraft.svg" alt="Bikcraft">
+      <img class="bikcraft-logo" src="/img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       <div class="contato">
         <h3 class="r-titulopp">CONTATO</h3>
         <Ul class="p-textop cinza4">
@@ -154,16 +155,16 @@
           <li><span>São Paulo - SP<span></li>
         </Ul>
         <div class="footer-redes">
-          <img src="/img/insta.svg" alt="">
-          <img src="/img/face.svg" alt="">
-          <img src="/img/yout.svg" alt="">
+          <img src="/img/insta.svg" width="32" height="32" alt="">
+          <img src="/img/face.svg" width="32" height="32" alt="">
+          <img src="/img/yout.svg" width="32" height="23" alt="">
         </div>
       </div>
       <div class="informação">
         <h3 class="r-titulopp">INFORMAÇÕES</h3>
         <Ul class="p-textop cinza4">
-          <li><a href="/">Bicicletas</a></li>
-          <li><a href="/">Seguros</a></li>
+          <li><a href="/bicicletas.html">Bicicletas</a></li>
+          <li><a href="/seguros.html">Seguros</a></li>
           <li><a href="/">Contato</a></li>
           <li><a href="/termos.html">Termos e condições</a></li>
         </ul>

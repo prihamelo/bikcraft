@@ -5,10 +5,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+dd {
   text-decoration: none;
   color: inherit;
   margin: 0px;
+  padding: 0;
+}
+button {
+  border: none;
 }
 .container {
   box-sizing: border-box;
@@ -20,6 +25,7 @@ h6 {
 }
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 img[src$=".jpg"] {

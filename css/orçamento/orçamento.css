@@ -1,0 +1,128 @@
+.orça-bg {
+  background: #efefef;
+  box-shadow: inset 0 520px var(--preto1);
+}
+.card1 {
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+.email1 {
+  margin-bottom: 60px;
+}
+.form1 h2 {
+  margin-bottom: 20px;
+}
+.checktermo {
+  display: flex;
+  gap: 8px;
+}
+.orça-conteudo {
+  display: none;
+}
+#bikcraft:checked ~ #orçamento-bikcraft,
+#Seguro:checked ~ #orçamento-seguro {
+  display: block;
+}
+.escolha {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+
+.escolha label {
+  background: var(--cinza3);
+  color: var(--cinza);
+  padding: 12px 16px;
+  border-radius: 4px;
+  display: block;
+  cursor: pointer;
+}
+.escolha input:checked + label {
+  background: var(--branco);
+  color: var(--preto1);
+}
+.escolha input:checked + label::before {
+  border-color: var(--preto1);
+  box-shadow: inset 0 0 0 3px var(--branco), inset 0 0 0 6px var(--preto1);
+}
+.escolha label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--cinza);
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+.escolha input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.escolha h2,
+.escolha label {
+  margin-bottom: 20px;
+}
+.orça-bg h2::before {
+  content: "";
+  display: block;
+  background: var(--amarelo);
+  height: 8px;
+  width: 8px;
+  border-radius: 6px;
+  position: absolute;
+  left: 0px;
+}
+.orça-bg h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+.orça-conteudo label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.orça-conteudo label span {
+  display: none;
+}
+.orça-conteudo input:checked + label span {
+  display: inline-block;
+}
+.escolha label:hover {
+  background: var(--cinza2);
+}
+.detalhes-bike {
+  background: var(--branco);
+  padding: 20px;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.detalhes-bike img[src$=".svg"] {
+  height: 12px;
+  width: 12px;
+}
+.detalhes-bike li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.escolha input:checked + label + .detalhes-bike {
+  display: grid;
+}
+@media (max-width: 800px) {
+  .escolha h2,
+  .escolha label {
+    margin-bottom: 16px;
+  }
+  .escolha {
+    gap: 0px 16px;
+  }
+}

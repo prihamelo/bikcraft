@@ -10,5 +10,10 @@
 @import url("./home/depoimento.css");
 @import url("./home/seguro.css");
 @import url("./global/footer.css");
+/* outras pages */
 @import url("./termos/termos.css");
 @import url("./bicicletas/bicicletas.css");
+@import url("./seguros/seguros.css");
+@import url("./bicicletas/bicicleta.css");
+@import url("./contato/contato.css");
+@import url("./orçamento/orçamento.css");

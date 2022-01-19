@@ -1,7 +1,8 @@
 .depoimento {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: var(--amarelo);
+  background: var(--amarelo) url("/img/dec/bottom-right-p.svg") no-repeat bottom
+    40px right 40px;
   overflow: hidden;
 }
 .depoimento img {

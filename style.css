@@ -14,8 +14,6 @@ p {
 }
 button {
   border: none;
-  background: none;
-  cursor: pointer;
 }
 .container {
   box-sizing: border-box;
@@ -111,7 +109,6 @@ img[src$=".jpg"] {
   line-height: 1.5;
   font-weight: 400;
 }
-
 .r-sub {
   font-family: Roboto;
   font-size: 20px;
@@ -313,26 +310,6 @@ ul {
 a {
   text-decoration: none;
 }
-.js .fadeInDown {
-  transform: translate3d(0, -20px, 0);
-}
-.js .fadeInUp {
-  transform: translate3d(0, 20px, 0);
-}
-.js .fadeInRight {
-  transform: translate3d(20px, 0, 0);
-}
-.js .fadeInLeft {
-  transform: translate3d(-20px, 0, 0);
-}
-.js [data-anime] {
-  opacity: 0;
-}
-.js .anime {
-  opacity: 1;
-  transform: none;
-  transition: transform 0.8s, opacity 0.8s;
-}
 .header-bg {
   background-color: #000;
 }
@@ -367,8 +344,7 @@ a {
   transition: 0.3s;
   position: absolute;
 }
-.header-menu a:hover:after,
-.header-menu a.ativo::after {
+.header-menu a:hover:after {
   width: 100%;
 }
 @media (max-width: 800px) {
@@ -1023,11 +999,7 @@ a {
   background: var(--amarelo);
   margin-right: 8px;
 }
-.perguntas button {
-  display: flex;
-  align-items: center;
-}
-.perguntas button::after {
+.perguntas dl div::after {
   content: "";
   display: inline-block;
   width: 14px;
@@ -1035,24 +1007,17 @@ a {
   border-radius: 6px;
   background: url("/img/icones/seta-abrir.svg");
   position: absolute;
+  top: 36px;
   right: 20px;
-  top: 20px;
   transition: 0.3s;
 }
-.perguntas button:hover::after,
-.perguntas button[aria-expanded="true"]::after {
+.perguntas dl div:hover::after {
   transform: rotate(180deg);
 }
 .perguntas dd {
   padding-left: 16px;
   padding-top: 16px;
   max-width: 80ch;
-}
-.js .perguntas dd {
-  display: none;
-}
-.js .perguntas dd.ativa {
-  display: block;
 }
 @media (max-width: 800px) {
   .vantagens {
@@ -1426,7 +1391,7 @@ a {
 .orça-conteudo {
   display: none;
 }
-#seguro:checked ~ #orçamento-seguro,
+#Seguro:checked ~ #orçamento-seguro,
 #bikcraft:checked ~ #orçamento-bikcraft {
   display: block;
 }

@@ -1,3 +1,25 @@
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.js .fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.js .fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+/* 7 Adicione o CSS Essencial abaixo */
+.js [data-anime] {
+  opacity: 0;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
 a,
 dd,
 h1,
@@ -14,6 +36,7 @@ p {
 }
 button {
   border: none;
+  background: none;
 }
 .container {
   box-sizing: border-box;
@@ -344,7 +367,8 @@ a {
   transition: 0.3s;
   position: absolute;
 }
-.header-menu a:hover:after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 @media (max-width: 800px) {
@@ -999,7 +1023,7 @@ a {
   background: var(--amarelo);
   margin-right: 8px;
 }
-.perguntas dl div::after {
+.perguntas dl button::after {
   content: "";
   display: inline-block;
   width: 14px;
@@ -1007,17 +1031,24 @@ a {
   border-radius: 6px;
   background: url("/img/icones/seta-abrir.svg");
   position: absolute;
-  top: 36px;
+  top: 20px;
   right: 20px;
   transition: 0.3s;
 }
-.perguntas dl div:hover::after {
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 .perguntas dd {
   padding-left: 16px;
   padding-top: 16px;
   max-width: 80ch;
+}
+.js .perguntas dd {
+  display: none;
+}
+.js .perguntas dd.ativa {
+  display: block;
 }
 @media (max-width: 800px) {
   .vantagens {
@@ -1388,10 +1419,10 @@ a {
   display: flex;
   gap: 8px;
 }
-.orça-conteudo {
+.js .orça-conteudo {
   display: none;
 }
-#Seguro:checked ~ #orçamento-seguro,
+#seguro:checked ~ #orçamento-seguro,
 #bikcraft:checked ~ #orçamento-bikcraft {
   display: block;
 }
